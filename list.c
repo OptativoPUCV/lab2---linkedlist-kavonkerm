@@ -43,7 +43,7 @@ void * firstList(List * lista) {
 }
 
 void * nextList(List * lista) {
-  Node* datoN = lista->current->dato;
+  Node* datoN = lista->current->data;
   if (!lista->head) return NULL;
   return (datoN->next);
 }
