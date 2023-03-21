@@ -43,9 +43,10 @@ void * firstList(List * lista) {
 }
 
 void * nextList(List * lista) {
+  Nodo* sigNodo = lista->current;
   if (!lista->head) return NULL;
-  lista->current = lista->current->next;
-  return (lista->current->data);
+  sigNodo = lista->current->next;
+  return (sigNodo->data);
 }
 
 void * lastList(List * list) {
