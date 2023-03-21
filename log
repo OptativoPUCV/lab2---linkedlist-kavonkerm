@@ -245,3 +245,23 @@ Tue 21 Mar 2023 01:27:30 AM UTC:
  tests:  2|5
 total_score: 15/70
 07c3222
+Tue 21 Mar 2023 03:50:57 PM UTC: 
+ list.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c:1:2: error: stray ‘#’ in program
+    1 | x#include <stdio.h>
+      |  ^
+list.c:1:1: error: unknown type name ‘x’
+    1 | x#include <stdio.h>
+      | ^
+list.c:1:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+    1 | x#include <stdio.h>
+      |           ^
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:47:25: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   47 |   lista->current = lista->next;
+      |                         ^~
+Compilation failed
+3990637

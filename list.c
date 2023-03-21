@@ -1,4 +1,4 @@
-#include <stdio.h>
+x#include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include "list.h"
@@ -42,8 +42,10 @@ void * firstList(List * lista) {
   return (lista->current->data);
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * lista) {
+  if (!lista->head) return NULL;
+  lista->current = lista->next;
+  return (lista->current->data);
 }
 
 void * lastList(List * list) {
