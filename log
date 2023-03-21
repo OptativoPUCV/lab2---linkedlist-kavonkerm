@@ -386,3 +386,25 @@ Tue 21 Mar 2023 09:13:53 PM UTC:
  tests:  3|5
 total_score: 15/70
 52465d4
+Tue 21 Mar 2023 11:01:06 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:46:33: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+   46 |   Node* datoN = lista->current->dato;
+      |                                 ^~~~
+      |                                 data
+list.c:48:11: error: ‘n’ undeclared (first use in this function)
+   48 |   return (n->next);
+      |           ^
+list.c:48:11: note: each undeclared identifier is reported only once for each function it appears in
+list.c:46:9: error: unused variable ‘datoN’ [-Werror=unused-variable]
+   46 |   Node* datoN = lista->current->dato;
+      |         ^~~~~
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+   49 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7b3cf71
