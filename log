@@ -180,3 +180,9 @@ list.c:31:39: error: ‘list’ undeclared (first use in this function); did you
 list.c:31:39: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 db5a7d9
+Tue 21 Mar 2023 01:18:26 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+63568f1
