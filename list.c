@@ -44,7 +44,8 @@ void * firstList(List * lista) {
 
 void * nextList(List * lista) {
   if (!lista->head) return NULL;
-  return (lista->current->data);
+  Nodo* next = lista->current
+  return (next);
 }
 
 void * lastList(List * list) {
