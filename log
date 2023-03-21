@@ -168,3 +168,15 @@ list.c:31:23: error: expected expression before ‘)’ token
       |                       ^
 Compilation failed
 aa0975c
+Tue 21 Mar 2023 01:18:09 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:31:39: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   31 |   List* lista = (List*) malloc(sizeof(list));
+      |                                       ^~~~
+      |                                       List
+list.c:31:39: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+db5a7d9
